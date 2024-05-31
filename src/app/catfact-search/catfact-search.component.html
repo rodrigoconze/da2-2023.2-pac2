@@ -2,4 +2,13 @@
 
 <form>
     <button type="submit" class="btn btn-primary" (click)="getCatFact()">Search cat fact</button>
-  </form>
+ </form>
+
+ <div>
+  <p *ngIf="catFact">{{catFact}}</p>
+ </div>
+
+
+ <form>
+  <button *ngIf="showDetails" type="submit" class="btn btn-primary" (click)="goToDetails()">Show details</button>
+</form>

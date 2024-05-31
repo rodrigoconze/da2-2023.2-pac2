@@ -1,0 +1,4 @@
+<div *ngFor="let detail of catDetails; let i = index">
+    <p *ngIf="i != catDetails.length - 1">{{detail}}</p>
+    <p style="color: blue;" *ngIf="i == catDetails.length - 1">{{detail}}</p>
+</div>
